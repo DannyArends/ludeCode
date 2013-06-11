@@ -1,0 +1,105 @@
+GSM153404	Parkinson's disease sample	x001
+GSM153405	healthy control sample	x004
+GSM153406	healthy control sample	x005
+GSM153407	Parkinson's disease sample	x006
+GSM153408	Parkinson's disease sample	x007
+GSM153409	neurological disease control sample	x009
+GSM153410	Parkinson's disease sample	x012
+GSM153411	Parkinson's disease sample	x014
+GSM153412	Parkinson's disease sample	x015
+GSM153413	Parkinson's disease sample	x016
+GSM153414	Parkinson's disease sample	x017a
+GSM153415	Parkinson's disease sample	x019
+GSM153416	Parkinson's disease sample	x020a
+GSM153417	Parkinson's disease sample	x023
+GSM153418	Parkinson's disease sample	x024
+GSM153419	healthy control sample	x027
+GSM153420	Parkinson's disease sample	x029
+GSM153421	Parkinson's disease sample	x032
+GSM153422	Parkinson's disease sample	x036
+GSM153423	healthy control sample	x044a
+GSM153424	Parkinson's disease sample	x045
+GSM153425	healthy control sample	x050
+GSM153426	neurological disease control sample	x053a
+GSM153427	healthy control sample	x058
+GSM153428	healthy control sample	x062
+GSM153429	healthy control sample	x072
+GSM153430	Parkinson's disease sample	x076
+GSM153431	neurological disease control sample	x087
+GSM153432	Parkinson's disease sample	x092
+GSM153433	healthy control sample	x097
+GSM153434	Parkinson's disease sample	x098
+GSM153435	Parkinson's disease sample	x100
+GSM153436	Parkinson's disease sample	x102
+GSM153437	Parkinson's disease sample	x103
+GSM153438	neurological disease control sample	x104
+GSM153439	Parkinson's disease sample	x106
+GSM153440	neurological disease control sample	x107
+GSM153441	Parkinson's disease sample	x108
+GSM153442	Parkinson's disease sample	x109
+GSM153443	Parkinson's disease sample	x110
+GSM153444	healthy control sample	x112
+GSM153445	Parkinson's disease sample	x114
+GSM153446	Parkinson's disease sample	x115
+GSM153447	neurological disease control sample	x116
+GSM153448	healthy control sample	x117
+GSM153449	Parkinson's disease sample	x118
+GSM153450	neurological disease control sample	x119
+GSM153451	healthy control sample	x120
+GSM153452	healthy control sample	x121
+GSM153453	Parkinson's disease sample	x122
+GSM153454	Parkinson's disease sample	x123
+GSM153455	Parkinson's disease sample	x124
+GSM153456	neurological disease control sample	x125
+GSM153457	neurological disease control sample	x126
+GSM153458	neurological disease control sample	x127
+GSM153459	neurological disease control sample	x128
+GSM153460	neurological disease control sample	x129
+GSM153461	neurological disease control sample	x132
+GSM153462	Parkinson's disease sample	x149
+GSM153463	neurological disease control sample	x150
+GSM153464	neurological disease control sample	x151
+GSM153465	Parkinson's disease sample	x153
+GSM153466	neurological disease control sample	x155
+GSM153467	neurological disease control sample	x156
+GSM153468	neurological disease control sample	x159
+GSM153469	neurological disease control sample	x160
+GSM153470	neurological disease control sample	x161
+GSM153471	neurological disease control sample	x162
+GSM153472	neurological disease control sample	x163
+GSM153473	neurological disease control sample	x164
+GSM153474	neurological disease control sample	x165
+GSM153475	neurological disease control sample	x166
+GSM153476	neurological disease control sample	x167
+GSM153477	healthy control sample	x169
+GSM153478	neurological disease control sample	x170
+GSM153479	healthy control sample	x171
+GSM153480	neurological disease control sample	x172
+GSM153481	Parkinson's disease sample	x174
+GSM153482	Parkinson's disease sample	x175
+GSM153483	Parkinson's disease sample	x176
+GSM153484	healthy control sample	x177
+GSM153485	Parkinson's disease sample	x178
+GSM153486	neurological disease control sample	x180
+GSM153487	neurological disease control sample	x181
+GSM153488	healthy control sample	x182
+GSM153489	Parkinson's disease sample	x184
+GSM153490	Parkinson's disease sample	x185
+GSM153491	Parkinson's disease sample	x186
+GSM153492	Parkinson's disease sample	x187
+GSM153493	Parkinson's disease sample	x188
+GSM153494	Parkinson's disease sample	x189
+GSM153495	Parkinson's disease sample	x190
+GSM153496	healthy control sample	x191
+GSM153497	healthy control sample	x192
+GSM153498	Parkinson's disease sample	x193
+GSM153499	neurological disease control sample	x197
+GSM153500	healthy control sample	x198
+GSM153501	Parkinson's disease sample	x199
+GSM153502	Parkinson's disease sample	x200
+GSM153503	healthy control sample	x201
+GSM153504	neurological disease control sample	x203
+GSM153505	Parkinson's disease sample	x204
+GSM153506	Parkinson's disease sample	x205
+GSM153507	neurological disease control sample	x208
+GSM153508	healthy control sample	x302
