@@ -32,7 +32,7 @@ downloadGSE("GSE6613")  # 105 samples, we use the 50 whole blood control
 # Download illumina cellType specific array data
 system(paste0("wget http://www.ebi.ac.uk/arrayexpress/files/E-TABM-633/E-TABM-633.processed.1.zip")
 if(!file.exists("E-TABM-633")){ system(paste0("mkdir E-TABM-633")) } # Create folder
-system(paste0("unzip E-TABM-633.processed.1.zip -d E-TABM-633"))
+system(paste0("unzip E-TABM-633.processed.1.zip -d E-TABM-633")) # Extract file
 
 # Download illumina array whole blood
 downloadGSE("GSE24757")

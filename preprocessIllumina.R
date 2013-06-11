@@ -6,7 +6,9 @@
 library(lumi)
 library(preprocessCore)
 
-ProbeAnnotation <- read.csv("GPL6102-11574.txt",sep="\t",skip=27)
+ProbeAnnotation <- read.csv("GPL6102-11574.txt",sep="\t",skip=27) # Probe annotation
+GSE24757A <- read.csv("dataDescr/GSE24757.txt", sep="\t", header=FALSE, colClasses=("character")) # Annotation
+GSE19790A <- read.csv("dataDescr/GSE19790.txt", sep="\t", header=FALSE, colClasses=("character")) # Annotation
 
 GSE19790DATA    <- read.csv("GSE19790/GSE19790_non-normalized.txt",sep="\t",row.names=1)
 GSE19790DATA    <- GSE19790DATA[, grep("AVG_Signal", colnames(GSE19790DATA))]
@@ -21,7 +23,7 @@ tmp <- apply(CellTypeDATA, 2, as.numeric)
 rownames(tmp) <- rownames(CellTypeDATA)
 CellTypeDATA  <- tmp
 
-CellTypeAnnotation <- read.csv("E-TABM-633.txt",sep="\t", header=TRUE)
+CellTypeAnnotation <- read.csv("dataDescr/E-TABM-633.txt",sep="\t", header=TRUE)
 cellTypeNames <- as.character(CellTypeAnnotation[, "Hybridization.Name"])
 cellTypeTypes <- as.character(CellTypeAnnotation[, "Extract.Name"])
 cellTypes     <- unlist(lapply(strsplit(cellTypeTypes,"-"),"[",3))

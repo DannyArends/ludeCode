@@ -9,9 +9,9 @@ library(AnnotationDbi)                                         # Load the annota
 library(preprocessCore)                                        # Normalization
 
 # AFFYMETRIX #
-# We need the array info files: (CELNAME\tOTHER Columns)
-GSE22886A <- read.csv("GSE22886.txt", sep="\t", header=FALSE, colClasses=("character"))
-GSE6613A <- read.csv("GSE6613.txt", sep="\t", header=FALSE, colClasses=("character"))
+# We need the array info files: (CELname \t Other Columns)
+GSE22886A <- read.csv("dataDescr/GSE22886.txt", sep="\t", header=FALSE, colClasses=("character"))
+GSE6613A <- read.csv("dataDescr/GSE6613.txt", sep="\t", header=FALSE, colClasses=("character"))
 
 getCol <- function(x, aType){ GSE22886A[which(GSE22886A[,4]==aType), x] } # Helper function
 controlSamples  <- GSE6613A[which(grepl("control", GSE6613A[,2])),1]# Only control samples, Why addcomplexity
