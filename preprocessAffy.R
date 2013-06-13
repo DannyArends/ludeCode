@@ -1,5 +1,5 @@
 source("http://bioconductor.org/biocLite.R")   # Connect to bioConductor
-#install.packages(c("biomaRt")
+#install.packages(c("preprocessCore", "biomaRt")
 #biocLite(c("affy", "gcrma", "lumi", "gcrma","AnnotationDbi")) # Install the affy package
 library(affy)                                                  # Load the affy package
 library(gcrma)                                                 # gcRMA normalisation
@@ -60,20 +60,32 @@ write.csv(wholeBlood, file="expHGU133A_gcRMA_WholeBlood.txt", quote = FALSE)
 write.csv(cellTypes, file="expHGU133A_gcRMA_CellType.txt", quote = FALSE)
 
 wholeMean <- apply(wholeBlood, 1, mean)
+wholeSd <- apply(wholeBlood, 1, sd, na.rm=TRUE)
+
 cellMeans <- calcCellTypeMeans(cellTypes, "[HG-U133A]", "expHGU133A_gcRMA_CellType_mean.txt")
 
-cellTypeRatios <- cellMeans/wholeMean
+cellMeans <- cellMeans[which(wholeSd!=0),] #Remove SD==0
+wholeMean <- wholeMean[which(wholeSd!=0)]
+wholeSd <- wholeSd[which(wholeSd!=0)]
+
+#cellTypeRatios <- cellTypeRatios[which(wholeMean > 4),]
+#wholeMean <- wholeMean[which(wholeMean > 4)]
+
+cellTypeRatios <- (cellMeans - wholeMean) / wholeSd #cellMeans/wholeMean
 write.csv(cellTypeRatios, file="expHGU133A_CellType_Ratios.txt", quote = FALSE)
 
 ids    <- rownames(cellTypeRatios)
 mart   <- useMart("ensembl", dataset="hsapiens_gene_ensembl")
-toGene <- getBM(attributes = c("affy_hg_u133a", "entrezgene"), filters="affy_hg_u133a", values=ids, mart=mart)
+toGene <- getBM(attributes = c("affy_hg_u133a", "hgnc_symbol"),
+                filters="affy_hg_u133a", values=ids, mart=mart)
+
+toGene <- toGene[which(!is.na(toGene[,2])),] # Removed the ones in togene which don't have a gene
+toGene <- toGene[which(!toGene[,2]==""),] # Removed the ones in togene which don't have a gene
 
 matched <- which(rownames(cellTypeRatios) %in% toGene[,1])
-cellTypeRatios <- cellTypeRatios[matched, ]
-sortG <- match(rownames(cellTypeRatios), toGene[,1])
+cellTypeRatios <- cellTypeRatios[matched, ] # Removed the ones in cellTypeRatios which don't have a match
+
+sortG <- match(rownames(cellTypeRatios), toGene[,1]) # Sorter to put toGene in the order of cellTypeRatios
+
 write.csv(cbind(toGene[sortG,],cellTypeRatios), file="expHGU133A_CellType_Ratios.txt", quote = FALSE)
-
-
-
 

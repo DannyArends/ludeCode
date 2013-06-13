@@ -1,4 +1,4 @@
-#source("http://bioconductor.org/biocLite.R")    # Connect to bioConductor
+source("http://bioconductor.org/biocLite.R")    # Connect to bioConductor
 #biocLite(c("affy","lumi"))                      # Install the affy package
 # ILLUMINA #
 # cellTypes Samples: HaemAtlasMKEBNormalizedIntensities.csv
@@ -60,12 +60,33 @@ wholeBlood <- apply(wholeBlood,2, log2)
 rownames(wholeBlood) <- rownames(GSE19790DATA)
 colnames(wholeBlood) <- c(colnames(GSE19790DATA), colnames(GSE24757DATA))
 #write.csv(wholeBlood, file="expIllumina_WholeBlood_QNORM_Log2.txt", quote = FALSE)
-wholeMean <- apply(wholeBlood, 1, mean)
 
-cellTypeRatios <- cellMeans/wholeMean
-write.csv(cellTypeRatios, file="expIllumina_CellType_Ratios.txt", quote = FALSE)
+wholeMean <- apply(wholeBlood, 1, mean)
+wholeSd <- apply(wholeBlood, 1, sd, na.rm=TRUE)
+
+cellMeans <- cellMeans[which(wholeSd!=0),] #Remove SD==0
+wholeMean <- wholeMean[which(wholeSd!=0)]
+wholeSd <- wholeSd[which(wholeSd!=0)]
+
+cellTypeRatios <- (cellMeans - wholeMean) / wholeSd #cellMeans/wholeMean
+
+hasID <- which(!is.na(ProbeAnnotation[,15]))
+ProbeAnnotation <- ProbeAnnotation[hasID,]
 
 sortG <- match(rownames(cellTypeRatios), ProbeAnnotation[,1])
-write.csv(cbind(ProbeAnnotation[sortG,c(1,10)],cellTypeRatios), file="expIllumina_CellType_Ratios.txt", quote = FALSE)
+annotatedRatios <- cbind(ProbeAnnotation[sortG,c(1,15)],cellTypeRatios)
 
+annot <- read.table("2012-04-23-IlluminaAll96PercentIdentity-ProbeAnnotation-ProbesWithWrongMappingLengthFilteredOut-EnsemblAnnotation-ProbeTranslationTable-H8v2AndHT12v3.txt",sep='\t',header=TRUE)
+
+CellTypeVectorHJ <- read.csv("CellTypeSpecificityMatrix.txt", sep='\t')
+CellTypeVectorHJ <- CellTypeVectorHJ[-c(8229,8230),]
+annot <- annot[which(annot[,6] %in% CellTypeVectorHJ[,1]),]
+
+annot <- annot[which(annot[,15] %in% annotatedRatios[,2]), c(1:5,15)] # Take only our annotations
+matchA <- which(annotatedRatios[,2] %in% annot[,6])
+annotatedRatios <- annotatedRatios[matchA,]
+
+sortA <- match(annotatedRatios[,2], annot[,6])
+Hugo <- cbind(annot[sortA,], annotatedRatios)
+write.csv(cbind(annot[sortA,], annotatedRatios), file="expIllumina_CellType_Ratios.txt", quote = TRUE)
 
