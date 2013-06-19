@@ -1,0 +1,130 @@
+GSM648590	Septic Shock_biological rep1 01-0013
+GSM648591	Septic Shock_biological rep2 01-0014
+GSM648592	Septic Shock_biological rep3 01-0019
+GSM648593	Septic Shock_biological rep4 01-0021
+GSM648594	Septic Shock_biological rep5 01-0024
+GSM648595	Septic Shock_biological rep6 01-0025
+GSM648596	Septic Shock_biological rep7 01-0026
+GSM648597	Septic Shock_biological rep8 01-0030
+GSM648598	Septic Shock_biological rep9 01-0033A
+GSM648599	Septic Shock_biological rep10 01-0045A
+GSM648600	Septic Shock_biological rep11 01-0049A
+GSM648601	Septic Shock_biological rep12 01-0051A
+GSM648602	Septic Shock_biological rep13 01-0052A
+GSM648603	Septic Shock_biological rep14 01-0053A
+GSM648604	Septic Shock_biological rep15 01-0064
+GSM648605	Septic Shock_biological rep16 01-0068
+GSM648606	Septic Shock_biological rep17 01-0069
+GSM648607	Septic Shock_biological rep18 01-0071
+GSM648608	Septic Shock_biological rep19 01-0072
+GSM648609	Septic Shock_biological rep20 01-0073
+GSM648610	Septic Shock_biological rep21 01-0074
+GSM648611	Septic Shock_biological rep22 01-0077
+GSM648612	Septic Shock_biological rep23 01-0078
+GSM648613	Septic Shock_biological rep24 01-0079
+GSM648614	Septic Shock_biological rep25 01-0080
+GSM648615	Septic Shock_biological rep26 01-0007A
+GSM648616	Septic Shock_biological rep27 01-0034A
+GSM648617	Septic Shock_biological rep28 01-0036A
+GSM648618	Septic Shock_biological rep29 01-0044A
+GSM648619	Septic Shock_biological rep30 01-0047
+GSM648620	Septic Shock_biological rep31 01-0058A
+GSM648621	Septic Shock_biological rep32 01-0059A
+GSM648622	Septic Shock_biological rep33 01-0060A
+GSM648623	Septic Shock_biological rep34 01-0061A
+GSM648624	Septic Shock_biological rep35 01-0062A
+GSM648625	Septic Shock_biological rep36 05-0007
+GSM648626	Septic Shock_biological rep37 01-0066A
+GSM648627	Septic Shock_biological rep38 01-0070
+GSM648628	Septic Shock_biological rep39 01-0086
+GSM648629	Septic Shock_biological rep40 01-0088
+GSM648630	Control_biological rep1 01-0104
+GSM648631	Control_biological rep2 01-0105
+GSM648632	Control_biological rep3 01-0106
+GSM648633	Septic Shock_biological rep41 02-0001
+GSM648634	Septic Shock_biological rep42 02-0002A
+GSM648635	Septic Shock_biological rep43 04-0003
+GSM648636	Septic Shock_biological rep44 04-0005
+GSM648637	Control_biological rep4 04-0010C
+GSM648638	Control_biological rep5 04-0010
+GSM648639	Control_biological rep6 04-0011C
+GSM648640	Control_biological rep7 04-0011
+GSM648641	Control_biological rep8 04-0015
+GSM648642	Septic Shock_biological rep45 05-0003
+GSM648643	Septic Shock_biological rep46 05-0006
+GSM648644	Septic Shock_biological rep47 05-0008
+GSM648645	Septic Shock_biological rep48 05-0010
+GSM648646	Septic Shock_biological rep49 05-0011
+GSM648647	Septic Shock_biological rep50 06-0001
+GSM648648	Septic Shock_biological rep51 06-0003
+GSM648649	Septic Shock_biological rep52 06-0004
+GSM648650	Septic Shock_biological rep53 06-0006
+GSM648651	Septic Shock_biological rep54 06-0009A
+GSM648652	Septic Shock_biological rep55 07-0002
+GSM648653	Septic Shock_biological rep56 07-0006A
+GSM648654	Septic Shock_biological rep57 07-0004
+GSM648655	Septic Shock_biological rep58 09-0001
+GSM648656	Septic Shock_biological rep59 09-0002
+GSM648657	Septic Shock_biological rep60 10-0001
+GSM648658	Septic Shock_biological rep61 10-0012
+GSM648659	Septic Shock_biological rep62 10-0017
+GSM648660	Septic Shock_biological rep63 10-0020
+GSM648661	Septic Shock_biological rep64 10-0003
+GSM648662	Septic Shock_biological rep65 10-0005
+GSM648663	Septic Shock_biological rep66 10-0009
+GSM648664	Septic Shock_biological rep67 10-0018
+GSM648665	Septic Shock_biological rep68 10-0019
+GSM648666	Septic Shock_biological rep69 10-0021A
+GSM648667	Septic Shock_biological rep70 11-0001
+GSM648668	Control_biological rep9 11-0008
+GSM648669	Control_biological rep10 11-0009
+GSM648670	Septic Shock_biological rep71 11-0010
+GSM648671	Control_biological rep11 11-0011
+GSM648672	Control_biological rep12 11-0012
+GSM648673	Control_biological rep13 11-0013
+GSM648674	Control_biological rep14 11-0014
+GSM648675	Septic Shock_biological rep72 11-0017
+GSM648676	Control_biological rep15 11-0018
+GSM648677	Control_biological rep16 11-0019
+GSM648678	Control_biological rep17 11-0020
+GSM648679	Control_biological rep18 11-0027
+GSM648680	Septic Shock_biological rep73 11-0029
+GSM648681	Control_biological rep19 11-0037
+GSM648682	Septic Shock_biological rep74 11-0054A
+GSM648683	Septic Shock_biological rep75 11-0002
+GSM648684	Septic Shock_biological rep76 11-0007
+GSM648685	Septic Shock_biological rep77 11-0035
+GSM648686	Control_biological rep20 11-0036
+GSM648687	Control_biological rep21 11-0052C
+GSM648688	Control_biological rep22 11-0052
+GSM648689	Control_biological rep23 11-0077
+GSM648690	Control_biological rep24 11-0078
+GSM648691	Control_biological rep25 11-0080
+GSM648692	Control_biological rep26 11-0081
+GSM648693	Control_biological rep27 11-0082
+GSM648694	Control_biological rep28 11-0083
+GSM648695	Septic Shock_biological rep78 12-0002A
+GSM648696	Septic Shock_biological rep79 13-0002A
+GSM648697	Septic Shock_biological rep80 14-0002A
+GSM648698	Septic Shock_biological rep81 14-0004A
+GSM648699	Control_biological rep29 15-0001
+GSM648700	Control_biological rep30 15-0002
+GSM648701	Control_biological rep31 15-0003
+GSM648702	Septic Shock_biological rep82 15-0004
+GSM648703	Control_biological rep32 15-0005
+GSM648704	Septic Shock_biological rep83 15-0007
+GSM648705	Septic Shock_biological rep84 15-0008
+GSM648706	Septic Shock_biological rep85 15-0017
+GSM648707	Septic Shock_biological rep86 15-0011A
+GSM648708	Septic Shock_biological rep87 15-0012A
+GSM648709	Septic Shock_biological rep88 17-0001A
+GSM648710	Septic Shock_biological rep89 18-0002
+GSM648711	Septic Shock_biological rep90 19-0001
+GSM648712	Septic Shock_biological rep91 19-0005
+GSM648713	Septic Shock_biological rep92 20-0002
+GSM648714	Septic Shock_biological rep93 20-0003
+GSM648715	Septic Shock_biological rep94 04-0004
+GSM648716	Septic Shock_biological rep95 21-0001
+GSM648717	Septic Shock_biological rep96 21-0003
+GSM648718	Septic Shock_biological rep97 26-260611
+GSM648719	Septic Shock_biological rep98 25-070603

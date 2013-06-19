@@ -1,0 +1,14 @@
+GSM596529	Control	820B
+GSM596530	Huntington's disease	820C
+GSM596531	Huntington's disease	820D
+GSM596532	Huntington's disease	820E
+GSM596533	Huntington's disease	820F
+GSM596534	Huntington's disease	874A
+GSM596535	Huntington's disease	874B
+GSM596536	Control	874C
+GSM596537	Control	874D
+GSM596538	Control	874E
+GSM596539	Huntington's disease	874F
+GSM596540	Control	874G
+GSM596541	Huntington's disease	874H
+GSM596542	Control	894B
