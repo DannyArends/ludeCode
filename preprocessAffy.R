@@ -13,11 +13,18 @@ library(preprocessCore)                                        # Normalization
 GSE22886A <- read.csv("dataDescr/GSE22886.txt", sep="\t", header=FALSE, colClasses=("character"))
 GSE6613A <- read.csv("dataDescr/GSE6613.txt", sep="\t", header=FALSE, colClasses=("character"))
 
+GSE12288A <- read.csv("dataDescr/GSE12288.txt", sep="\t", header=FALSE, colClasses=("character"))
+GSE3846A <- read.csv("dataDescr/GSE3846.txt", sep="\t", header=FALSE, colClasses=("character"))
+GSE24250A <- read.csv("dataDescr/GSE24250.txt", sep="\t", header=FALSE, colClasses=("character"))
+
 getCol <- function(x, aType){ GSE22886A[which(GSE22886A[,4]==aType), x] } # Helper function
 controlSamples  <- GSE6613A[which(grepl("control", GSE6613A[,2])),1]# Only control samples, Why addcomplexity
 
 HGU133A <- paste0("GSE22886/",  getCol(1,"[HG-U133A]"),".CEL.gz") # The Filenames for U133A
-HGU133Awb <- paste0("GSE6613/", controlSamples,".CEL.gz")# Filenames for whole blood controls
+HGU133Awb <- c(paste0("GSE6613/",  GSE6613A[,1] ,".CEL.gz"),      # Filenames for whole blood controls
+               paste0("GSE12288/", GSE12288A[,1],".CEL.gz"),      # Filenames for whole blood controls
+               paste0("GSE3846/",  GSE3846A[,1] ,".CEL.gz"),       # Filenames for whole blood controls
+               paste0("GSE24250/", GSE24250A[,1],".CEL.gz"))      # Filenames for whole blood controls
 
 # Loads CEL.gz data files and return nolog gcRMA expression data
 loadCELdata <- function(filenames, file="", doQuantiles = FALSE){
@@ -48,13 +55,15 @@ calcCellTypeMeans <- function(expData, aType, file = ""){
   invisible(cTypeMeans)
 }
 
-if(!file.exists("expHGU133A_gcRMA_ALL.txt")){ # Load .CEL.gz data for the Affy HGU133A samples
-  expression <- loadCELdata(c(HGU133A, HGU133Awb), "expHGU133A_gcRMA_ALL.txt", doQuantiles = TRUE)
+if(!file.exists("expHGU133A_gcRMA_MORE.txt")){ # Load .CEL.gz data for the Affy HGU133A samples
+  expression <- loadCELdata(c(HGU133A, HGU133Awb), "expHGU133A_gcRMA_MORE.txt", doQuantiles = TRUE)
 }
-expression <- read.csv("expHGU133A_gcRMA_ALL.txt", row.names=1)
+expression <- read.csv("expHGU133A_gcRMA_MORE.txt", row.names=1)
 
-wholeBlood <- expression[,gsub("GSE6613/", "", HGU133Awb)]
-cellTypes  <- expression[,gsub("GSE22886/","", HGU133A)]
+cellTypeIds <- which(colnames(expression) %in% gsub("GSE22886/","", HGU133A))
+
+wholeBlood <- expression[, -cellTypeIds]
+cellTypes  <- expression[, cellTypeIds]
 
 write.csv(wholeBlood, file="expHGU133A_gcRMA_WholeBlood.txt", quote = FALSE)
 write.csv(cellTypes, file="expHGU133A_gcRMA_CellType.txt", quote = FALSE)

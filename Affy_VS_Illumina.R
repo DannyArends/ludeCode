@@ -15,7 +15,7 @@ removeMissing <- function(matrix, col="HUGO"){
 annot <- removeMissing(annot)
 #Load in the HarmJan data (atm we only have 1 cell type there
 CTVHJ <- NULL ; colHeaders <- NULL
-for(x in dir("BloedCelDataHarmJan/")[1]){
+for(x in dir("BloedCelDataHarmJan/")[4]){
   fn <- paste0("BloedCelDataHarmJan/",x)
   rowH <- read.csv(fn, sep='\t')[,1:2]
   colHeaders <- c(colHeaders, x)

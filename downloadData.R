@@ -28,6 +28,15 @@ downloadGSE <- function(GSE = "GSE14771"){
 # Download affymetrics aray data
 downloadGSE("GSE22886") # 2 x 114 samples different cellTypes
 downloadGSE("GSE6613")  # 105 samples, we use the 50 whole blood control
+downloadGSE("GSE12288") # 222 samples
+downloadGSE("GSE3846")  # 108
+#downloadGSE("GSE1751")  # 31
+#downloadGSE("GSE1343")  # 16
+downloadGSE("GSE24250")  # 14
+
+#AFFY GPL570
+downloadGSE("GSE26440") # 130 samples
+downloadGSE("GSE16059") # 88 samples
 
 # Download illumina cellType specific array data
 system(paste0("wget http://www.ebi.ac.uk/arrayexpress/files/E-TABM-633/E-TABM-633.processed.1.zip")
