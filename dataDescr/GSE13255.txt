@@ -1,0 +1,291 @@
+GSM334354	Case/control experiment: C.9.10001.187.QbF83.u.HTN
+GSM334355	Case/control experiment: Cm.9.10003.201.SbF43.u.HTN
+GSM334356	Case/control experiment: C.9.10004.194.QwM54.u.PS
+GSM334357	Case/control experiment: C.9.10005.214.QbF67.y.CR
+GSM334358	Case/control experiment: Cm.2.10008.163.QwF73.y.GI
+GSM334359	Case/control experiment: C.5.10010.044.QbF64.u.HTN
+GSM334360	Case/control experiment: C.6.10012.259.QwF59.y.COPDx
+GSM334361	Case/control experiment: C.6.10013.267.QwF68.y.COPDx
+GSM334362	Case/control experiment: C.6.10018.260.QwM66.y.COPD
+GSM334363	Case/control experiment: C.9.10019.202.NwM44.n.NHC
+GSM334364	Case/control experiment: C.6.10022.179.QwF65.u.COPD
+GSM334365	Case/control experiment: Cm.9.10023.185.SwM49.u.CR
+GSM334366	Case/control experiment: C.10.10027.294.SwM38.y.COPD
+GSM334367	Case/control experiment: C.6.10028.180.QwF68.y.COPD
+GSM334368	Case/control experiment: C.6.10029.261.QwM61.y.COPD
+GSM334369	Case/control experiment: C.16.10030.165.NwF48.n.SARC
+GSM334370	Case/control experiment: C.6.10031.262.QwM78.y.COPD
+GSM334371	Case/control experiment: C.6.10032.195.QwM49.y.COPD
+GSM334372	Case/control experiment: C.6.10033.263.QwM65.y.COPD
+GSM334373	Case/control experiment: C.5.10034.166.QwM79.y.COPD
+GSM334374	Case/control experiment: C.16.10035.167.NwM76.y.COPD
+GSM334375	Case/control experiment: Cm.4.10036.168.NwM67.y.COPD
+GSM334376	Case/control experiment: C.6.10037.264.QwM60.y.COPD
+GSM334377	Case/control experiment: C.6.10038.265.QwF69.y.COPD
+GSM334378	Case/control experiment: C.6.10039.266.QwF62.y.COPD
+GSM334379	Case/control experiment: C.5.10040.001.QwF56.y.COPD
+GSM334380	Case/control experiment: C.6.10041.182.QwM71.y.COPD
+GSM334381	Case/control experiment: C.16.10042.169.QwM84.y.COPD
+GSM334382	Case/control experiment: Cm.4.10043.170.QwM68.y.COPD
+GSM334383	Case/control experiment: C.10.10044.297.SbF53.y.SARC
+GSM334384	Case/control experiment: C.6.10046.209.QwM63.y.COPD
+GSM334385	Case/control experiment: C.11.10047.172.QwM68.y.COPD
+GSM334386	Case/control experiment: C.6.10048.212.QbM67.y.COPD
+GSM334387	Case/control experiment: C.6.10049.205.QwM57.y.COPD
+GSM334388	Case/control experiment: C.6.10050.186.QbM66.y.COPD
+GSM334389	Case/control experiment: C.6.10051.215.QwM75.y.COPD
+GSM334390	Case/control experiment: C.11.10052.173.QwF56.y.COPD
+GSM334391	Case/control experiment: C.6.10053.204.QwM61.y.COPD
+GSM334392	Case/control experiment: Cm.4.10054.174.QwM70.y.COPD
+GSM334393	Case/control experiment: C.6.10055.206.QoF63.y.COPD
+GSM334394	Case/control experiment: C.6.10056.219.QwF70.y.COPD
+GSM334395	Case/control experiment: C.16.10057.175.QwM70.y.COPD
+GSM334396	Case/control experiment: C.11.10058.176.QwF81.y.COPD
+GSM334397	Case/control experiment: Cm.6.10059.183.QwM79.y.COPD
+GSM334398	Case/control experiment: C.2.10061.045.QwF57.y.COPD
+GSM334399	Case/control experiment: C.2.10062.046.QwM68.y.COPDx
+GSM334400	Case/control experiment: C.3.10063.047.QwM79.n.COPD
+GSM334401	Case/control experiment: C.2.10064.048.QbM54.y.COPD
+GSM334402	Case/control experiment: C.10.01146.295.SwM53.y.HAM
+GSM334403	Case/control experiment: C.9.01148.217.NbM71.n.GI
+GSM334404	Case/control experiment: C.9.01182.203.QwM50.y.PN
+GSM334405	Case/control experiment: C.7.01184.199.QwM56.y.NM
+GSM334406	Case/control experiment: C.7.01185.210.QwM47.y.NM
+GSM334407	Case/control experiment: C.15.01186.155.QwF58.n.NM
+GSM334408	Case/control experiment: C.10.01191.298.QwM75.n.NM
+GSM334409	Case/control experiment: C.10.01218.301.NwM59.n.GI
+GSM334410	Case/control experiment: C.6.01242.188.QwM72.y.NM
+GSM334411	Case/control experiment: Cm.4.01250.156.QwF58.u.NM
+GSM334412	Case/control experiment: Cm.9.01251.184.NbF52.n.GI
+GSM334413	Case/control experiment: C.10.01260.296.QwM53.y.NM
+GSM334414	Case/control experiment: C.10.01263.302.QwM72.y.NM
+GSM334415	Case/control experiment: C.15.01267.157.NwF61.n.NM
+GSM334416	Case/control experiment: C.15.01277.158.QwF68.y.NM
+GSM334417	Case/control experiment: C.6.01289.193.QwM52.y.NM
+GSM334418	Case/control experiment: C.7.01305.218.QwF57.y.GI
+GSM334419	Case/control experiment: C.15.01309.159.QwF57.n.NM
+GSM334420	Case/control experiment: C.16.01314.160.NaF67.y.GI
+GSM334421	Case/control experiment: C.9.01328.192.NwM54.y.NM
+GSM334422	Case/control experiment: C.16.01342.161.QwF74.n.GI
+GSM334423	Case/control experiment: C.7.01361.208.QwM54.y.NM
+GSM334424	Case/control experiment: C.7.01399.211.SwM58.y.GI
+GSM334425	Case/control experiment: C.7.01424.196.QwM65.y.GI
+GSM334426	Case/control experiment: C.8.01438.207.QwM64.n.NM
+GSM334427	Case/control experiment: C.8.01442.220.QwM53.y.NM
+GSM334428	Case/control experiment: C.7.01450.221.SwF58.y.GI
+GSM334429	Case/control experiment: C.7.01474.216.QwM69.y.NM
+GSM334430	Case/control experiment: C.7.01488.213.QwM77.y.GI
+GSM334431	Case/control experiment: C.9.01490.197.NwM74.n.NM
+GSM334432	Case/control experiment: C.9.01522.283.SwM38.u.GI
+GSM334433	Case/control experiment: C.5.01554.035.NwF60.n.NM
+GSM334434	Case/control experiment: C.2.01562.036.QwF46.y.NM
+GSM334435	Case/control experiment: C.5.01575.037.QwF54.n.GI
+GSM334436	Case/control experiment: C.5.01588.038.QwM51.n.GI
+GSM334437	Case/control experiment: C.2.01594.039.QwF70.y.GI
+GSM334438	Case/control experiment: C.16.01616.051.NwF67.y.NM
+GSM334439	Case/control experiment: C.5.01618.041.NwM58.u.GI
+GSM334440	Case/control experiment: C.16.01619.052.QwM73.n.GI
+GSM334441	Case/control experiment: C.2.01628.043.QwM72.y.GI
+GSM334442	Case/control experiment: C.5.01657.070.NwM46.n.SARC
+GSM334443	Case/control experiment: C.5.01677.072.QwM88.u.GI
+GSM334444	Case/control experiment: C.2.01697.074.QbF68.y.GI
+GSM334445	Case/control experiment: P.10.01136.305.SwF62.y.AC
+GSM334446	Case/control experiment: P.10.01137.306.QwM81.n.AC
+GSM334447	Case/control experiment: P.9.01138.131.QwM70.y.LSCC
+GSM334448	Case/control experiment: P.9.01140.126.QbM39.n.AC
+GSM334449	Case/control experiment: P.6.01141.240.QwF46.y.AC
+GSM334450	Case/control experiment: P.6.01143.233.QwM76.n.AC
+GSM334451	Case/control experiment: Pm.7.01153.227.SbM60.y.AC
+GSM334452	Case/control experiment: P.8.01154.111.QwM77.y.AC
+GSM334453	Case/control experiment: P.8.01155.112.QwF72.y.AC
+GSM334454	Case/control experiment: P.10.01158.312.SwF59.y.AC
+GSM334455	Case/control experiment: P.6.01166.224.QwF48.y.AC
+GSM334456	Case/control experiment: P.7.01167.237.SbF73.n.AC
+GSM334457	Case/control experiment: P.8.01171.277.QwM75.y.LSCC
+GSM334458	Case/control experiment: P.6.01175.234.QwM68.y.AC
+GSM334459	Case/control experiment: P.6.01177.226.QwF67.y.AC
+GSM334460	Case/control experiment: P.9.01178.132.SwF75.y.LSCC
+GSM334461	Case/control experiment: P.10.01183.307.QwM79.y.AC
+GSM334462	Case/control experiment: P.8.01189.136.QwM74.y.LSCC
+GSM334463	Case/control experiment: P.8.01192.270.SwF57.y.LSCC
+GSM334464	Case/control experiment: P.10.01193.314.QwF70.y.AC
+GSM334465	Case/control experiment: P.10.01194.313.QwF55.y.AC
+GSM334466	Case/control experiment: P.9.01196.278.QwF75.n.LSCC
+GSM334467	Case/control experiment: P.8.01200.113.QwF74.n.AC
+GSM334468	Case/control experiment: P.10.01202.315.QwF68.y.AC
+GSM334469	Case/control experiment: P.10.01204.310.QwM62.n.LSCC
+GSM334470	Case/control experiment: P.7.01211.232.SwF69.n.AC
+GSM334471	Case/control experiment: P.10.01214.282.QwM61.n.LSCC
+GSM334472	Case/control experiment: P.7.01216.238.SwF69.n.AC
+GSM334473	Case/control experiment: P.9.01221.105.QwM61.n.AC
+GSM334474	Case/control experiment: P.6.01222.231.QwM74.y.AC
+GSM334475	Case/control experiment: P.7.01224.229.SwF45.y.AC
+GSM334476	Case/control experiment: Pm.10.01227.304.QwM64.n.AC
+GSM334477	Case/control experiment: P.9.01233.280.QwM61.n.LSCC
+GSM334478	Case/control experiment: P.9.01254.292.SwF77.y.LSCC
+GSM334479	Case/control experiment: P.10.01262.303.NwF63.n.AC
+GSM334480	Case/control experiment: P.8.01264.130.SwF78.y.LSCC
+GSM334481	Case/control experiment: P.10.01269.316.QwM68.n.LSCC
+GSM334482	Case/control experiment: P.9.01280.133.QwF72.n.LSCC
+GSM334483	Case/control experiment: P.9.01282.109.QwF72.n.AC
+GSM334484	Case/control experiment: P.9.01284.288.QwF73.n.LSCC
+GSM334485	Case/control experiment: P.10.01286.311.QwM50.n.AC
+GSM334486	Case/control experiment: P.10.01287.308.QwF52.n.AC
+GSM334487	Case/control experiment: P.10.01292.309.QwF79.n.LSCC
+GSM334488	Case/control experiment: P.8.01303.271.QwM62.u.LSCC
+GSM334489	Case/control experiment: P.10.01307.319.QwM69.n.AC
+GSM334490	Case/control experiment: P.6.01311.245.QwF75.y.AC
+GSM334491	Case/control experiment: P.10.01312.318.QwM74.y.AC
+GSM334492	Case/control experiment: P.6.01316.239.QwF60.n.AC
+GSM334493	Case/control experiment: P.10.01323.321.QwF53.n.AC
+GSM334494	Case/control experiment: P.4.01325.002.QwF67.y.NSCLC
+GSM334495	Case/control experiment: P.6.01337.235.SbF65.n.AC
+GSM334496	Case/control experiment: P.9.01339.146.QwF63.y.LSCC
+GSM334497	Case/control experiment: P.6.01340.230.QwM66.n.AC
+GSM334498	Case/control experiment: P.8.01343.114.QwM62.n.AC
+GSM334499	Case/control experiment: P.6.01344.243.QwM68.y.AC
+GSM334500	Case/control experiment: P.6.01346.249.QwF83.y.AC
+GSM334501	Case/control experiment: P.4.01352.003.QwF72.u.BAC
+GSM334502	Case/control experiment: P.9.01362.110.QwM70.n.AC
+GSM334503	Case/control experiment: P.6.01368.236.QwF56.n.AC
+GSM334504	Case/control experiment: P.9.01369.290.QwF73.y.AC
+GSM334505	Case/control experiment: P.9.01373.287.QwF57.n.AC
+GSM334506	Case/control experiment: P.3.01375.034.QwM75.y.NSCLC
+GSM334507	Case/control experiment: P.9.01386.291.QwF45.n.AC
+GSM334508	Case/control experiment: P.9.01387.115.NwF53.n.AC
+GSM334509	Case/control experiment: P.4.01388.004.SwF48.n.NSCLC
+GSM334510	Case/control experiment: P.8.01390.272.QwM80.n.LSCC
+GSM334511	Case/control experiment: P.10.01397.318.SwM67.y.AC
+GSM334512	Case/control experiment: P.8.01400.268.QwM80.y.LSCC
+GSM334513	Case/control experiment: P.9.01402.125.SwM41.n.AC
+GSM334514	Case/control experiment: P.9.01403.127.QwM67.u.AC
+GSM334515	Case/control experiment: P.8.01413.279.QwM77.y.LSCC
+GSM334516	Case/control experiment: P.6.01415.256.QwM59.y.AC
+GSM334517	Case/control experiment: P.9.01423.276.SwF76.n.LSCC
+GSM334518	Case/control experiment: P.6.01427.248.QwM58.n.AC
+GSM334519	Case/control experiment: P.8.01429.275.QwF77.y.LSCC
+GSM334520	Case/control experiment: P.6.01430.257.QwF61.y.AC
+GSM334521	Case/control experiment: P.6.01431.255.QwF64.y.AC
+GSM334522	Case/control experiment: P.10.01435.320.NwM65.n.AC
+GSM334523	Case/control experiment: P.6.01436.253.QbM53.y.AC
+GSM334524	Case/control experiment: P.8.01437.137.QbF73.y.LSCC
+GSM334525	Case/control experiment: P.4.01439.005.NwM52.n.BAC
+GSM334526	Case/control experiment: P.9.01444.128.QwM73.y.AC
+GSM334527	Case/control experiment: P.6.01445.228.QwF56.n.AC
+GSM334528	Case/control experiment: P.8.01449.274.QwF73.y.LSCC
+GSM334529	Case/control experiment: P.9.01451.289.NwF52.n.AC
+GSM334530	Case/control experiment: P.7.01453.151.QwM78.y.AC
+GSM334531	Case/control experiment: P.9.01454.147.NwM73.n.LSCC
+GSM334532	Case/control experiment: P.8.01455.269.QwM73.n.LSCC
+GSM334533	Case/control experiment: P.9.01463.286.QwF73.n.LSCC
+GSM334534	Case/control experiment: P.9.01466.285.SwM73.y.LSCC
+GSM334535	Case/control experiment: P.9.01468.284.SwF73.y.LSCC
+GSM334536	Case/control experiment: P.6.01469.241.QwF65.y.AC
+GSM334537	Case/control experiment: P.4.01471.006.SwM67.y.NSCLC
+GSM334538	Case/control experiment: P.6.01473.247.QwM56.y.AC
+GSM334539	Case/control experiment: P.8.01475.273.SwF73.n.LSCC
+GSM334540	Case/control experiment: P.8.01482.281.QwM73.y.LSCC
+GSM334541	Case/control experiment: P.9.01484.138.QwF73.n.LSCC
+GSM334542	Case/control experiment: P.6.01489.250.QbF62.y.AC
+GSM334543	Case/control experiment: P.6.01491.246.QwF66.n.AC
+GSM334544	Case/control experiment: P.9.01519.144.QbM57.y.AC
+GSM334545	Case/control experiment: P.6.01542.225.QbF59.n.AC
+GSM334546	Case/control experiment: P.4.01548.007.QwM84.n.AC
+GSM334547	Case/control experiment: P.4.01550.008.NwM53.n.AC
+GSM334548	Case/control experiment: P.4.01557.010.QwM76.y.NSCLC
+GSM334549	Case/control experiment: P.8.01559.142.QwF72.n.AC
+GSM334550	Case/control experiment: P.4.01560.011.NwF48.n.ACx
+GSM334551	Case/control experiment: P.4.01561.012.QwM60.n.LSCC
+GSM334552	Case/control experiment: P.4.01566.013.SwM69.u.LSCC
+GSM334553	Case/control experiment: P.4.01569.014.QwM74.n.NSCLC
+GSM334554	Case/control experiment: P.5.01572.015.QbF77.n.AC
+GSM334555	Case/control experiment: P.4.01573.016.QwM43.u.AC
+GSM334556	Case/control experiment: P.5.01582.017.QwM61.u.AC
+GSM334557	Case/control experiment: P.4.01583.018.NaF57.n.LSCC
+GSM334558	Case/control experiment: P.4.01584.019.QwM78.n.AC
+GSM334559	Case/control experiment: P.4.01586.020.SwM70.y.LSCC
+GSM334560	Case/control experiment: P.4.01589.021.SwF57.y.AC
+GSM334561	Case/control experiment: P.4.01590.057.QwM71.n.AC
+GSM334562	Case/control experiment: P.5.01591.022.QwF75.y.AC
+GSM334563	Case/control experiment: P.4.01592.023.QwM50.y.LSCC
+GSM334564	Case/control experiment: P.4.01595.024.QwF70.n.LSCC
+GSM334565	Case/control experiment: P.3.01597.025.QwM45.y.AC
+GSM334566	Case/control experiment: P.4.01598.009.SwF68.y.AC
+GSM334567	Case/control experiment: P.3.01600.026.QwM81.y.NSCLC
+GSM334568	Case/control experiment: P.3.01602.027.QwM75.u.LSCC
+GSM334569	Case/control experiment: P.3.01604.028.QwF72.n.AC
+GSM334570	Case/control experiment: P.3.01614.029.QwM82.y.LSCC
+GSM334571	Case/control experiment: P.3.01622.030.QwF69.n.NSCLC
+GSM334572	Case/control experiment: Pm.3.01630.032.QwM58.n.NSCLC
+GSM334573	Case/control experiment: P.3.01631.033.QwF76.n.AC
+GSM334574	Case/control experiment: P.2.01632.066.SbM54.y.AC
+GSM334575	Case/control experiment: P.2.01643.067.QwM67.y.AC
+GSM334576	Case/control experiment: P.5.01647.068.QwM69.n.LSCC
+GSM334577	Case/control experiment: P.2.01656.069.QwF80.y.AC
+GSM334578	Case/control experiment: P.2.01674.071.QwM46.u.AC
+GSM334579	Case/control experiment: P.5.01681.073.SwM52.n.NSCLC
+GSM334580	Case/control experiment: P.5.01709.075.QwF76.y.LSCC
+GSM334581	Case/control experiment: P.2.01713.076.QwM50.u.AC
+GSM334582	validation experiment: NYU_1_971R_AC
+GSM334583	validation experiment: NYU_1_964R_AC
+GSM334584	validation experiment: NYU_1_1208R_AC
+GSM334585	validation experiment: NYU_2_1_AC
+GSM334586	validation experiment: NYU_1_1000R_AC
+GSM334587	validation experiment: NYU_1_1111R_AC
+GSM334588	validation experiment: NYU_1_970R_AC
+GSM334589	validation experiment: NYU_1_1016R_AC
+GSM334590	validation experiment: NYU_1_975R_AC
+GSM334591	validation experiment: NYU_2_3_AC
+GSM334592	validation experiment: NYU_1_1002R_AC
+GSM334593	validation experiment: NYU_2_2_AC
+GSM334594	validation experiment: NYU_2_9_GGO
+GSM334595	validation experiment: NYU_2_10_N
+GSM334596	validation experiment: NYU_2_8_GGO
+GSM334597	validation experiment: NYU_2_11_N
+GSM334598	validation experiment: NYU_2_5_GGO
+GSM334599	validation experiment: NYU_2_18_N
+GSM334600	validation experiment: NYU_2_6_GGO
+GSM334601	validation experiment: NYU_2_14_N
+GSM334602	validation experiment: NYU_2_13_N
+GSM334603	validation experiment: NYU_2_12_N
+GSM334604	validation experiment: NYU_2_17_N
+GSM334605	validation experiment: NYU_2_15_N
+GSM334606	validation experiment: NYU_2_16_N
+GSM334607	validation experiment: NYU_2_4_GGO
+GSM334608	validation experiment: NYU_2_7_GGO
+GSM334609	Before vs after surgery experiment: P.3.01498.102.NwF78.n.AC
+GSM334610	Before vs after surgery experiment: P.4.01319.054.QwF67.y.AC
+GSM334611	Before vs after surgery experiment: P.4.01610.058.SwM68.n.NSCLC
+GSM334612	Before vs after surgery experiment: P.8.01278.053.QwM68.y.BAC
+GSM334613	Before vs after surgery experiment: P.3.01374.093.NwM83.n.AC
+GSM334614	Before vs after surgery experiment: P.3.01345.099.QwM72.y.LSCC
+GSM334615	Before vs after surgery experiment: P.4.01417.101.QwM57.n.LSCC
+GSM334616	Before vs after surgery experiment: P.3.01252.091.QwF65.n.AC
+GSM334617	Before vs after surgery experiment: P.4.01240.090.QwF55.y.AC
+GSM334618	Before vs after surgery experiment: P.3.01407.100.QwF87.n.LSCC
+GSM334619	Before vs after surgery experiment: P.3.01394.056.QwF75.n.LSCC
+GSM334620	Before vs after surgery experiment: P.3.01297.098.QwF69.y.LSCC
+GSM334621	Before vs after surgery experiment: P.4.01220.097.QwM62.n.LSCC
+GSM334622	Before vs after surgery experiment: P.3.01485.096.QwM68.n.AC
+GSM334623	Before vs after surgery experiment: P.4.01391.055.QwM69.y.NSCLC
+GSM334624	Before vs after surgery experiment: P.3.01246.092.QwF47.n.AC
+GSM334625	Before vs after surgery experiment: P.3.01433.095.QwM64.y.AC
+GSM334626	Before vs after surgery experiment: P.3.01408.094.QbM63.n.AC
+GSM334627	Before vs after surgery experiment: Pt.8.01498.089.NwF78.n.AC
+GSM334628	Before vs after surgery experiment: Pt.4.01319.060.QwF67.y.AC
+GSM334629	Before vs after surgery experiment: Pt.4.01610.064.SwM68.n.NSCLC
+GSM334630	Before vs after surgery experiment: Pt.3.01278.059.QwM68.y.BAC
+GSM334631	Before vs after surgery experiment: Pt.3.01374.080.NwM83.n.AC
+GSM334632	Before vs after surgery experiment: Pt.3.01345.086.QwM72.y.LSCC
+GSM334633	Before vs after surgery experiment: Pt.4.01417.088.QwM57.n.LSCC
+GSM334634	Before vs after surgery experiment: Pt.8.01252.078.QwF65.n.AC
+GSM334635	Before vs after surgery experiment: Pt.4.01240.077.QwF55.y.AC
+GSM334636	Before vs after surgery experiment: Pt.3.01407.087.QwF87.n.LSCC
+GSM334637	Before vs after surgery experiment: Pt.3.01394.062.QwF75.n.LSCC
+GSM334638	Before vs after surgery experiment: Pt.3.01297.085.QwF69.y.LSCC
+GSM334639	Before vs after surgery experiment: Pt.4.01220.084.QwM62.n.LSCC
+GSM334640	Before vs after surgery experiment: Pt.8.01485.083.QwM68.n.AC
+GSM334641	Before vs after surgery experiment: Pt.4.01391.061.QwM69.y.NSCLC
+GSM334642	Before vs after surgery experiment: Pt.3.01246.079.QwF47.n.AC
+GSM334643	Before vs after surgery experiment: Pt.8.01433.082.QwM64.y.AC
+GSM334644	Before vs after surgery experiment: Pt.3.01408.081.QbM63.n.AC

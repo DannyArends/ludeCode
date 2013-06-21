@@ -44,6 +44,7 @@ if(!file.exists("E-TABM-633")){ system(paste0("mkdir E-TABM-633")) } # Create fo
 system(paste0("unzip E-TABM-633.processed.1.zip -d E-TABM-633")) # Extract file
 
 # Download illumina array whole blood
-downloadGSE("GSE24757")
-downloadGSE("GSE19790")
+downloadGSE("GSE24757") #
+downloadGSE("GSE19790") #
+downloadGSE("GSE13255") # 291 samples
 
