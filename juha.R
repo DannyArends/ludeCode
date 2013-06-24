@@ -23,13 +23,16 @@ combined <- cbind(neutrophil, wholeblood)
 combined <- combined[which(rownames(combined) %in% translation[,1]),]
 
 Zscores <- apply(combined, 1, function(x){
-  return(
-    (mean(x[IDneutro]) - mean(x)) / sd(x)
-  )
+  return( (mean(x[IDneutro]) - mean(x)) / sd(x) )
 })
 
-#top1000 <- sort(abs(Zscores))[length(Zscores)-1000]
-#Zscores <- Zscores[which(abs(Zscores) > top1000)]
+Means <- apply(combined, 1, function(x){
+  return( mean(x) )
+})
+
+top1000 <- names(Means)[sort(Means,decreasing=TRUE,index.return=TRUE)$ix[1:1000]]
+
+Zscores <- Zscores[which(names(Zscores) %in% top1000)]
 
 # Add annotation to the cell type vector
 sortR <- match(names(Zscores), translation[,1])
@@ -44,9 +47,6 @@ cat("Number significant changed (P < 0.05):", length(which(Zscores < 0.05/length
 
 ivector <- read.csv("2013-06-21-EGCUT-Vector-rs12057769-2000128.txt",sep='\t',row.names=NULL)
 ivector <- ivector[which(as.character(ivector[,1]) %in% as.character(ivectorAnn[,6])),]
-
-#top1000 <- sort(abs(ivector[,2]))[nrow(ivector)-1000]
-#ivector <- ivector[which(abs(ivector[,2]) > top1000),]
 
 # Add annotation to the EGCUT vector
 sortA <- match(ivector[,1], ivectorAnn[,6])
