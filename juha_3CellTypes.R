@@ -1,6 +1,7 @@
 setwd("~/Github/Juha/")
 
-metaRes <- read.csv("MetaAnalysisZScoreMatrix-Ensembl.txt",sep='\t',row.names=1)
+#metaRes <- read.csv("MetaAnalysisZScoreMatrix-Ensembl.txt",sep='\t',row.names=1)
+load("metaRes.Rdata")
 
 wholeblood <- read.csv("GPL570_WholeBlood.txt",sep='\t',row.names=1)
 Neutr <- read.csv("GPL570_Neutrophil.txt",sep='\t',row.names=1)
@@ -15,11 +16,10 @@ ivectorAnn <- ivectorAnn[which(ivectorAnn[,5] != "-"),]
 LudeVec <- read.csv("NeutrophilVectorLude.txt",sep="\t")
 IntrVec <- read.csv("2013-06-21-EGCUT-Vector-rs12057769-2000128.txt",sep='\t',row.names=NULL)
 
-
 badneutros <- c("GSM141250", "GSM141251", "GSM141252", "GSM141253", "GSM141254", "GSM141255", "GSM141256",
                 "GSM141257", "GSM549581", "GSM549582", "GSM549583", "GSM549584")
 
-neutrophil <- neutrophil[,-which(colnames(neutrophil) %in% badneutros)]
+Neutr <- Neutr[,-which(colnames(Neutr) %in% badneutros)]
 
 Bcell <- Bcell[,-which(apply(cor(Bcell),2,median) < 0.9)]
 Tcell <- Tcell[,-which(apply(cor(Tcell),2,median) < 0.9)]
