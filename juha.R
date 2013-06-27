@@ -2,6 +2,12 @@ setwd("~/Github/Juha/")
 
 wholeblood <- read.csv("GPL570_WholeBlood.txt",sep='\t',row.names=1)
 neutrophil <- read.csv("GPL570_Neutrophil.txt",sep='\t',row.names=1)
+Bcell <- read.csv("GPL570_Bcell.txt",sep='\t',row.names=1)
+Bcell <- Bcell[,-which(apply(cor(Bcell),2,median) < 0.9)]
+
+Tcell <- read.csv("GPL570_Tcell.txt",sep='\t',row.names=1)
+Tcell <- Tcell[,-which(apply(cor(Tcell),2,median) < 0.9)]
+gc();gc();gc();
 
 #Neutrophil vector lude
 ludevectordata <- read.csv("NeutrophilVectorLude.txt",sep="\t")
@@ -36,7 +42,7 @@ Zscores <- Zscores[which(names(Zscores) %in% top1000)]
 
 # Add annotation to the cell type vector
 sortR <- match(names(Zscores), translation[,1])
-myvector <- cbind(translation[sortR,c(1,9)],Zscores) # Add annotation
+myvector <- cbind(translation[sortR,c(1,9)], Zscores) # Add annotation
 
 ludevectordata <- ludevectordata[which(ludevectordata[,1] %in% myvector[,1]),]
 sortL <- match(myvector[,1], ludevectordata[,1])
@@ -59,5 +65,5 @@ sortT <- match(ivector[,1],myvector[,2])
 resultvector <- cbind(myvector[sortT,c(2,3,4)], ivector[,c(1,4)])
 
 plot(resultvector[,c(2,5)], pch=19, cex=0.4)
-cor(resultvector[,c(2,3,5)],method="spearman")
+cor(sign(resultvector[,c(2,3,5)]), use="pair",method="spearman")
 
