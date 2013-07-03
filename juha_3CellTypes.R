@@ -88,6 +88,10 @@ top100_RBC <- rownames(corrs)[sort(abs(corrs[,5]),index.ret=TRUE, decreasing=TRU
 
 heatmap(corrs[c(top100_Neutro,top100_Bcell,top100_Tcell,top100_NKcell,top100_RBC), ], col=c("red","white","green"))
 
+top <- which(apply(corrs,1,function(x){max(abs(x)) > 0.4}))
+aa <- heatmap(corrs[top,],keep.dendro=TRUE)
+heatmap.2(t(corrs[top[aa$rowInd],]), trace="none", col=c("red","pink","white","lightgreen","green"), main="Correlation CellTypes vs QTL Z-scores", key=FALSE, margins=c(5,10), scale="none", dendrogram="row", labCol="",xlab="Zscore Snp:Probe")
+
 #plot(ResVector[,c(2,5)], pch=19, cex=0.4)
 cor(ResVector[,c(3, 4, 5, 7)], use="pair",method="spearman")
 
