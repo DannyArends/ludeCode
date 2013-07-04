@@ -2,6 +2,7 @@ setwd("~/Github/Juha/")
 
 RNASeq <- read.csv("expression_table.genes.exonic_v69.0.3.rawCounts.txt", sep='\t', row.names=1)
 sampleNames <- read.csv("SampleDetails.txt", sep='\t', row.names=1)
+colnames(RNASeq) <- sampleNames[,1]
 
 ordering <- unlist(lapply(strsplit(colnames(RNASeq),"_"),"[",6))
 
@@ -112,3 +113,21 @@ mmRes   <- mmRes[inSeq,]
 sortSeq <- match(as.character(mmRes[,1]), rownames(RNASeq)) # Align
 
 mmRes <- cbind(RNASeq[sortSeq,7], mmRes)
+
+
+
+#NEUTRO GPL50 to SEBO RNA seq
+
+inTrans <- which(rownames(Neutr) %in% translation[,1])
+Neutr <- Neutr[inTrans,]
+
+sortTrans <- match(rownames(Neutr), translation[,1]) # Align
+Neutr <- cbind(translation[sortTrans,9], Neutr)
+
+inRNASeq <- which(Neutr[,1] %in% rownames(RNASeq))
+Neutr <- Neutr[inRNASeq,]
+
+sortRNASeq <- match(Neutr[,1], rownames(RNASeq)) # Align
+Neutr <- cbind(RNASeq[sortRNASeq, 7], Neutr)
+
+means <- apply(Neutr[,3:ncol(Neutr)],1,mean)
