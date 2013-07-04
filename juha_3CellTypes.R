@@ -1,5 +1,10 @@
 setwd("~/Github/Juha/")
 
+RNASeq <- read.csv("expression_table.genes.exonic_v69.0.3.rawCounts.txt", sep='\t', row.names=1)
+sampleNames <- read.csv("SampleDetails.txt", sep='\t', row.names=1)
+
+ordering <- unlist(lapply(strsplit(colnames(RNASeq),"_"),"[",6))
+
 #metaRes <- read.csv("MetaAnalysisZScoreMatrix-Ensembl.txt",sep='\t',row.names=1)
 load("metaRes.Rdata")
 
@@ -97,3 +102,13 @@ cor(ResVector[,c(3, 4, 5, 7)], use="pair",method="spearman")
 
 write.csv(ResVector[,-6], file="Tvector.txt", quote = FALSE)
 
+inTrans <- which(rownames(metaRes) %in% rownames(translation))
+metaRes <- metaRes[inTrans,]
+sortTrans <- match(rownames(metaRes), rownames(translation)) # Align
+mmRes <- cbind(translation[sortTrans,9], metaRes)
+
+inSeq   <- which(as.character(mmRes[,1]) %in% rownames(RNASeq))
+mmRes   <- mmRes[inSeq,]
+sortSeq <- match(as.character(mmRes[,1]), rownames(RNASeq)) # Align
+
+mmRes <- cbind(RNASeq[sortSeq,7], mmRes)
