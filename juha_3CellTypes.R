@@ -116,18 +116,19 @@ mmRes <- cbind(RNASeq[sortSeq,7], mmRes)
 
 
 
-#NEUTRO GPL50 to SEBO RNA seq
+#NEUTRO GPL570 to SEBO RNA seq
 
 inTrans <- which(rownames(Neutr) %in% translation[,1])
 Neutr <- Neutr[inTrans,]
-
 sortTrans <- match(rownames(Neutr), translation[,1]) # Align
 Neutr <- cbind(translation[sortTrans,9], Neutr)
 
 inRNASeq <- which(Neutr[,1] %in% rownames(RNASeq))
 Neutr <- Neutr[inRNASeq,]
-
 sortRNASeq <- match(Neutr[,1], rownames(RNASeq)) # Align
 Neutr <- cbind(RNASeq[sortRNASeq, 7], Neutr)
 
 means <- apply(Neutr[,3:ncol(Neutr)],1,mean)
+
+lot(means, Neutr[,1],pch=19,cex=0.4,xlab="Affy GPL570 (Neutrophil)", ylab="RNA Seq (Granulocyte)")
+
