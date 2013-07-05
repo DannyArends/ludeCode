@@ -114,21 +114,41 @@ sortSeq <- match(as.character(mmRes[,1]), rownames(RNASeq)) # Align
 
 mmRes <- cbind(RNASeq[sortSeq,7], mmRes)
 
-
-
 #NEUTRO GPL570 to SEBO RNA seq
+ccrr <- function(Neutr,RNASeq,translation, col=7, type="Neutrophil"){
+  inTrans <- which(rownames(Neutr) %in% translation[,1])
+  Neutr <- Neutr[inTrans,]
+  sortTrans <- match(rownames(Neutr), translation[,1]) # Align
+  Neutr <- cbind(translation[sortTrans,9], Neutr)
 
-inTrans <- which(rownames(Neutr) %in% translation[,1])
-Neutr <- Neutr[inTrans,]
-sortTrans <- match(rownames(Neutr), translation[,1]) # Align
-Neutr <- cbind(translation[sortTrans,9], Neutr)
+  inRNASeq <- which(Neutr[,1] %in% rownames(RNASeq))
+  Neutr <- Neutr[inRNASeq,]
+  sortRNASeq <- match(Neutr[,1], rownames(RNASeq)) # Align
+  Neutr <- cbind(RNASeq[sortRNASeq, col], Neutr)
 
-inRNASeq <- which(Neutr[,1] %in% rownames(RNASeq))
-Neutr <- Neutr[inRNASeq,]
-sortRNASeq <- match(Neutr[,1], rownames(RNASeq)) # Align
-Neutr <- cbind(RNASeq[sortRNASeq, 7], Neutr)
+  means <- apply(Neutr[,3:ncol(Neutr)],1,function(x){mean(as.numeric(x))})
+  cat("Correlation:", cor(means, Neutr[,1],method="spearman"),"\n")
+  name <- colnames(RNASeq)[col]
+  png(paste0("plot",type,".png"),width=1024, height=800)
+  plot(means, log2(Neutr[,1]),pch=19,cex=0.4,xlab=paste0("Affy GPL570 (",type,")"), ylab=paste0("RNA Seq (",name,")"))
+  dev.off()
+  means
+}
 
-means <- apply(Neutr[,3:ncol(Neutr)],1,mean)
 
-lot(means, Neutr[,1],pch=19,cex=0.4,xlab="Affy GPL570 (Neutrophil)", ylab="RNA Seq (Granulocyte)")
+nmean <- ccrr(Neutr,RNASeq,translation,7,"Neutrophil")
+nmean <- ccrr(Neutr,RNASeq,translation,6,"Neutrophil_6")
+nmean <- ccrr(Neutr,RNASeq,translation,5,"Neutrophil_5")
+nmean <- ccrr(Neutr,RNASeq,translation,4,"Neutrophil_4")
+nmean <- ccrr(Neutr,RNASeq,translation,3,"Neutrophil_3")
+nmean <- ccrr(Neutr,RNASeq,translation,2,"Neutrophil_2")
+nmean <- ccrr(Neutr,RNASeq,translation,1,"Neutrophil_1")
+
+wbmean <- ccrr(wholeblood,RNASeq,translation,"wholeblood")
+bmean <- ccrr(Bcell,RNASeq,translation,"Bcells")
+tmean <- ccrr(Tcell,RNASeq,translation,"Tcells")
+nkmean <- ccrr(NKcell,RNASeq,translation,"NKcells")
+rbcmean <- ccrr(RBC,RNASeq,translation,"RBC")
+
+#plot(means, Neutr[,1],pch=19,cex=0.4,xlab="Affy GPL570 (Neutrophil)", ylab="RNA Seq (Granulocyte)")
 
