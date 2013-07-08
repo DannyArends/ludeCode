@@ -135,7 +135,6 @@ ccrr <- function(Neutr,RNASeq,translation, col=7, type="Neutrophil"){
   means
 }
 
-
 nmean <- ccrr(Neutr,RNASeq,translation,7,"Neutrophil")
 nmean <- ccrr(Neutr,RNASeq,translation,6,"Neutrophil_6")
 nmean <- ccrr(Neutr,RNASeq,translation,5,"Neutrophil_5")
@@ -143,6 +142,29 @@ nmean <- ccrr(Neutr,RNASeq,translation,4,"Neutrophil_4")
 nmean <- ccrr(Neutr,RNASeq,translation,3,"Neutrophil_3")
 nmean <- ccrr(Neutr,RNASeq,translation,2,"Neutrophil_2")
 nmean <- ccrr(Neutr,RNASeq,translation,1,"Neutrophil_1")
+
+
+nmeans <- apply(Neutr[,3:ncol(Neutr)],1,function(x){mean(as.numeric(x))})
+bmeans <- apply(Bcell[,3:ncol(Bcell)],1,function(x){mean(as.numeric(x))})
+tmeans <- apply(Tcell[,3:ncol(Tcell)],1,function(x){mean(as.numeric(x))})
+nkmeans <- apply(NKcell[,3:ncol(NKcell)],1,function(x){mean(as.numeric(x))})
+rbcmeans <- apply(RBC[,3:ncol(RBC)],1,function(x){mean(as.numeric(x))})
+
+MeanMatrix <- cbind(nmeans,bmeans,tmeans,nkmeans,rbcmeans)
+
+colnames(MeanMatrix) <- c("Neutrophil(A)","Bcell(A)","Tcell(A)","nkCell(A)","RBC(A)")
+
+inTrans <- which(rownames(MeanMatrix) %in% translation[,1])
+MeanMatrix <- MeanMatrix[inTrans,]
+sortTrans <- match(rownames(MeanMatrix), translation[,1]) # Align
+MeanMatrix <- cbind(as.character(translation[sortTrans,9]), MeanMatrix)
+
+inRNASeq <- which(MeanMatrix[,1] %in% rownames(RNASeq))
+MeanMatrix <- MeanMatrix[inRNASeq,]
+sortRNASeq <- match(MeanMatrix[,1], rownames(RNASeq)) # Align
+MeanMatrix <- cbind(RNASeq[sortRNASeq, 1:7], MeanMatrix)
+
+cor(apply(MeanMatrix[,-8],2,as.numeric))
 
 wbmean <- ccrr(wholeblood,RNASeq,translation,"wholeblood")
 bmean <- ccrr(Bcell,RNASeq,translation,"Bcells")
