@@ -45,6 +45,7 @@ zscores <- t(apply(wholeblood, 1, function(x){ # Using basis T statistics actual
                 t.test(as.numeric(RBC[row,]),x)$statistic) )
 }))
 colnames(zscores) <- c("Neutrophil", "Bcell", "Tcell", "NKcell", "RBC")
+write.csv(zscores, file="TScores5CellTypes.txt", quote = FALSE)
 
 # Add annotation to the cell type vector
 zscores <- zscores[which(rownames(zscores) %in% translation[,1]),]
@@ -164,13 +165,9 @@ MeanMatrix <- MeanMatrix[inRNASeq,]
 sortRNASeq <- match(MeanMatrix[,1], rownames(RNASeq)) # Align
 MeanMatrix <- cbind(RNASeq[sortRNASeq, 1:7], MeanMatrix)
 
-cor(apply(MeanMatrix[,-8],2,as.numeric))
+AffyRNASeqcorrs <- cor(apply(MeanMatrix[,-8],2,as.numeric))
 
-wbmean <- ccrr(wholeblood,RNASeq,translation,"wholeblood")
-bmean <- ccrr(Bcell,RNASeq,translation,"Bcells")
-tmean <- ccrr(Tcell,RNASeq,translation,"Tcells")
-nkmean <- ccrr(NKcell,RNASeq,translation,"NKcells")
-rbcmean <- ccrr(RBC,RNASeq,translation,"RBC")
+write.csv(AffyRNASeqcorrs, file="COR_Affy_RNASeq.txt", quote = FALSE)
 
 #plot(means, Neutr[,1],pch=19,cex=0.4,xlab="Affy GPL570 (Neutrophil)", ylab="RNA Seq (Granulocyte)")
 

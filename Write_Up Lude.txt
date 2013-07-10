@@ -1,6 +1,6 @@
 Determine cell type specificity vectors
 
-CellTypes Affy GPL570:
+Samples per cell types Affy GPL570:
 
 Whole Blood - 244 samples
 Neutrophil  - 204 samples
@@ -9,12 +9,34 @@ Tcell       - 157 samples
 nkCell      - 47 samples
 RBC         - 30 samples
 
-We calculate the vector using a basic student T-test between the cell samples and the 
-whole blood samples. This results in a vector (of length probes) of scores signifying 
-the difference in expression between the cell type of interest versus whole blood. The 
-resulting vectors are then correlated against all the qtl*celltype interaction vectors 
-(calculated by meta analysis Harm jan at all significant QTL).
+Calculation of cell type vectors
 
-When we detect a correlation above 0.XX between a celltype vector and a QTL:Interaction 
-vector we can confidently assigning a cell-type specific 'label' to the detected QTL
+We calculate the cell type vector using a basic student T-test between each gene the expression level in cell samples 
+versus the whole blood samples. This results in a vector (of length probes) of scores signifying the difference in 
+expression between the cell type of interest versus whole blood
+-> Results see table00.tab
+
+Using correlation to check the concordance between the expression on Affy GPL570 and RNAseq using correlation. This 
+shows high correlation between similar celltypes on the different platforms, while it shows less correlation with 
+unrelated cell types.
+-> Results see table01.tab
+
+Cell type vectors on different platforms
+
+We were unable to calculate vectors from the seven available RNA seq cell type samples (NK, Bcell, Monocytes, Tmemory, 
+CD4, CD8, Granulocytes) where no whole blood was available. We used the pooled expression the other 6 cell types (to 
+represent 'whole blood') and then use a ratio to have vectors we can correlate with our GPL570 cell type vectors.
+-> Results see table02.tab (not yet there)
+
+To estimate the stability of our vectors we calculated correlation between cell type vectors obtained using the 
+Affymetrix platform (HG-U133A) to a comparable illumina platform (GPL6102). this results shows a positive correlation 
+between related celltypes across platforms, while unrelated cell types tend to show a no or a negative correlation.
+-> Results see table03.tab
+
+Cell type vectors and SNP:QTL interaction term matrix
+
+The resulting vectors are then correlated against all the qtl*celltype interaction vectors (calculated by meta 
+analysis HarmJan at all significant QTL). When we detect a correlation above 0.XX between a celltype vector and a 
+QTL:Interaction vector we can confidently assigning a cell-type specific 'label' to the detected QTL.
+-> Results see table04.tab
 

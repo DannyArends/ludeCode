@@ -1,4 +1,5 @@
 #Match up
+setwd("~/Github/LudeNew")
 library(biomaRt)
 #mart   <- useMart("ensembl", dataset="hsapiens_gene_ensembl")
 
