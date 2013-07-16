@@ -33,19 +33,34 @@ Tcell  <- Tcell[,-which(apply(cor(Tcell), 2, median) < 0.9)] # Use correlation f
 
 IntrVec <- IntrVec[which(as.character(IntrVec[,1]) %in% as.character(ivectorAnn[,6])),]
 row <- 0
+signLVL <- 0.05/nrow(wholeblood)
+
 zscores <- t(apply(wholeblood, 1, function(x){ # Using basis T statistics actually
   row <<- row + 1
   meanWB <- mean(x)
   sdWB <- sd(x)
+
+  tNeutr  <- t.test(as.numeric(Neutr[row,]), x)
+  sNeutr  <- tNeutr$statistic
+  tBcell  <- t.test(as.numeric(Bcell[row,]), x) 
+  sBcell  <- tBcell$statistic
+  tTcell  <- t.test(as.numeric(Tcell[row,]), x)
+  sTcell  <- tTcell$statistic
+  tNKcell <- t.test(as.numeric(NKcell[row,]),x)
+  sNKcell <- tNKcell$statistic
+  tRBC    <- t.test(as.numeric(RBC[row,])   ,x)
+  sRBC    <- tRBC$statistic
+
+  if(tNeutr$p.value > signLVL) sNeutr <- NA
+  if(tBcell$p.value > signLVL) sBcell <- NA
+  if(tTcell$p.value > signLVL) sTcell <- NA
+  if(tNKcell$p.value > signLVL) sNKcell <- NA
+  if(tRBC$p.value > signLVL) sRBC <- NA
   if(row %% 100 == 0)cat("Done:", 3*row,"t tests\n")
-  return( cbind(t.test(as.numeric(Neutr[row,]), x)$statistic, 
-                t.test(as.numeric(Bcell[row,]), x)$statistic, 
-                t.test(as.numeric(Tcell[row,]), x)$statistic,
-                t.test(as.numeric(NKcell[row,]),x)$statistic,
-                t.test(as.numeric(RBC[row,]),x)$statistic) )
+  return( cbind(sNeutr,sBcell,sTcell,sNKcell,sRBC) )
 }))
 colnames(zscores) <- c("Neutrophil", "Bcell", "Tcell", "NKcell", "RBC")
-write.csv(zscores, file="TScores5CellTypes.txt", quote = FALSE)
+write.table(zscores, file="TScores5CellTypes_SignOnly.txt", quote = FALSE, sep='\t')
 
 # Add annotation to the cell type vector
 zscores <- zscores[which(rownames(zscores) %in% translation[,1]),]
@@ -79,7 +94,7 @@ r <- apply(metaRes[, 6:length(metaRes)], 2, function(qtl){
   if(cnt %% 100 == 0)cat("Cor of", cnt,"(QTL:cType):SNP pairs\n")
 })
 
-write.csv(corrs, file="COR_MetaAnalysisZScore_CellTypeTScore.txt", quote = FALSE)
+write.table(corrs, file="COR_MetaAnalysisZScore_CellTypeTScore_SignOnly.txt", quote = FALSE, sep='\t')
 
 summary(corrs[,1]) # Neutrophil -0.6 to 0.6
 summary(corrs[,2]) # Bcell      -0.4 to 0.4
