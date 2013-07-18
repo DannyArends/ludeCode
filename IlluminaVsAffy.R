@@ -26,3 +26,16 @@ inAnnot <- which(names(IlluMean) %in% ProbeAnnotation[,1])
 IlluMean <- IlluMean[inAnnot]
 sortAnnot <- match(names(IlluMean), ProbeAnnotation[,1]) # Align
 MeanMatrix <- cbind(as.character(ProbeAnnotation[sortAnnot,"Symbol"]), IlluMean)
+
+setwd("~/Github/Juha/")
+Affy <- read.csv("Neutrophil_RNAseq.txt",sep='\t')
+inAffy <- which(rownames(Affy) %in% MeanMatrix[,1])
+MeanMatrix <- MeanMatrix[inAffy, ]
+sortAffy <- match(rownames(Affy), MeanMatrix[,1]) # Align
+
+RnaAffyIllu <- cbind(Affy[sortAffy,], MeanMatrix)
+
+
+
+
+

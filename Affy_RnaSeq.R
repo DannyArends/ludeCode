@@ -29,6 +29,7 @@ Neutr   <- Neutr[inSeq,]
 sortSeq <- match(as.character(Neutr[,1]), rownames(RNASeq)) # Align
 
 Neutr <- cbind(RNASeq[sortSeq,], Neutr)
+write.table(Neutr,"Neutrophil_RNAseq.txt",sep='\t',quote=FALSE)
 NeutrRna <- log2(Neutr[,7])
 keep <- which(is.finite(NeutrRna)) #Kepp onlu the finite ones
 Neutr <- Neutr[keep, ]
