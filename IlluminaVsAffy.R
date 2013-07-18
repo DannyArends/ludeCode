@@ -29,12 +29,18 @@ MeanMatrix <- cbind(as.character(ProbeAnnotation[sortAnnot,"Symbol"]), IlluMean)
 
 setwd("~/Github/Juha/")
 Affy <- read.csv("Neutrophil_RNAseq.txt",sep='\t')
+
+inMean <- which(MeanMatrix[,1] %in% rownames(Affy))
 inAffy <- which(rownames(Affy) %in% MeanMatrix[,1])
-MeanMatrix <- MeanMatrix[inAffy, ]
-sortAffy <- match(rownames(Affy), MeanMatrix[,1]) # Align
+MeanMatrix <- MeanMatrix[inMean, ]
+Affy <- Affy[inAffy, ]
 
-RnaAffyIllu <- cbind(Affy[sortAffy,], MeanMatrix)
-
+RnaAffyIllu <-NULL
+for(gene in rownames(Affy)){
+  illumean <- mean(as.numeric(MeanMatrix[which(MeanMatrix[,1] == gene),2]))
+  AffyRowID <- which(rownames(Affy)==gene)
+  RnaAffyIllu <- rbind(RnaAffyIllu, c(gene, illumean, Affy[AffyRowID,-8]))
+}
 
 
 
