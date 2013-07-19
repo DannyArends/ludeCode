@@ -42,6 +42,14 @@ for(gene in rownames(Affy)){
   RnaAffyIllu <- rbind(RnaAffyIllu, c(gene, illumean, Affy[AffyRowID,-8]))
 }
 
+write.table(RnaAffyIllu,"NeutrophilIllumina_AllRNAseq_AllNeutroAffy_ByHUGO.txt", sep='\t', quote=FALSE)
 
-
-
+setwd("~/Github/Juha/")
+RnaAffyIllu <- read.table("NeutrophilIllumina_AllRNAseq_AllNeutroAffy_ByHUGO.txt", sep='\t')
+png("Illumina_vs_RNAseq.png")
+  plot(RnaAffyIllu[,2],log2(RnaAffyIllu[,9]),xlab="Illumina (Granulocytes)",ylab="RNASeq",main="RnaSeq vs Illumina",pch=19,cex=0.6)
+dev.off()
+AffyMean <- apply(RnaAffyIllu[,10:ncol(RnaAffyIllu)],1,mean)
+png("Affy_vs_RNAseq.png")
+  plot(AffyMean, log2(RnaAffyIllu[,9]),xlab="Affy (Neutrophil)",ylab="RNASeq",main="RnaSeq vs Affy",pch=19,cex=0.6)
+dev.off()
